@@ -54,6 +54,7 @@ public class FoodController {
 		return service.findByNameLike("%" + find + "%");
 	}
 
+	//
 	//データ編集
 	//	@PutMapping("/foodmg/update/{id}")
 	//	@CrossOrigin
