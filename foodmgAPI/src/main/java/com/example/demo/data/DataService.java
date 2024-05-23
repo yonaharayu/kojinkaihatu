@@ -44,8 +44,10 @@ public class DataService {
 	}
 
 	//更新
-	public void update(int id, DataInterface item) {
+	public Food update(int id, DataInterface item) {
 		System.out.println("service:apdate[" + item + "]");
+		item.setId(id);
+		return repository.save(item);
 
 	}
 

@@ -17,13 +17,13 @@ public class Food implements DataInterface {
 	@Column
 	private int id;
 
-	@Column(nullable = false)
+	@Column(name = "name", nullable = false)
 	private String name;
 
-	@Column(nullable = false)
+	@Column(name = "stock", nullable = false)
 	private int stock;
 
-	@Column(nullable = false)
+	@Column(name = "price", nullable = false)
 	private int price;
 
 	@Column(name = "exdate", nullable = false)
